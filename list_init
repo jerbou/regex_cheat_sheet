@@ -11,3 +11,7 @@ regexp_substr( "nom_latin_compil" ,'\\w{1}') || regexp_substr( "nom_latin_compil
 
 # datagistip expressions regulières
 # https://github.com/datagistips/memos/blob/main/regexes.md
+
+
+# extrait le premier mot (string avant un esapce)
+left("nom_latin_compil", regexp_match(  "nom_champ" ,'\\s')-1)
