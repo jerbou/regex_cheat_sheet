@@ -6,3 +6,5 @@
 regexp_substr( "nom_latin_compil" ,'\\w{1}') || regexp_substr( "nom_latin_compil" ,' (\\w){1}')
 
 
+# site ressource
+# https://umar-yusuf.blogspot.com/2020/08/regular-expression-in-qgis.html
