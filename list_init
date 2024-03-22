@@ -15,3 +15,6 @@ regexp_substr( "nom_latin_compil" ,'\\w{1}') || regexp_substr( "nom_latin_compil
 
 # extrait le premier mot (string avant un esapce)
 left("nom_latin_compil", regexp_match(  "nom_champ" ,'\\s')-1)
+
+# extrait le dernier element (dernier mot)
+ array_last(   regexp_matches( "nom_latin_compil" ,'(.*) (.*)'))
