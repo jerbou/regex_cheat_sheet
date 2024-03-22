@@ -1,0 +1,5 @@
+
+# donne l'abbrevation de taxon d'sp
+# entree : Anas strepera
+# sortie : As
+regexp_substr( "nom_latin_compil" ,'\\w{1}') || regexp_substr( "nom_latin_compil" ,' (\\w){1}')
