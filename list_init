@@ -2,4 +2,7 @@
 # donne l'abbrevation de taxon d'sp
 # entree : Anas strepera
 # sortie : As
+# source : https://gis.stackexchange.com/questions/418776/labelling-with-first-letter-taken-from-each-word-in-string-using-qgis
 regexp_substr( "nom_latin_compil" ,'\\w{1}') || regexp_substr( "nom_latin_compil" ,' (\\w){1}')
+
+
