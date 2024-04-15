@@ -18,3 +18,8 @@ left("nom_latin_compil", regexp_match(  "nom_champ" ,'\\s')-1)
 
 # extrait le dernier element (dernier mot)
  array_last(   regexp_matches( "nom_latin_compil" ,'(.*) (.*)'))
+
+
+CASE WHEN strpos( "field" ,'-')> 0 THEN substr(
+"field" , 1, strpos( "field" ,’-’)-1 ) ELSE
+"field" END
